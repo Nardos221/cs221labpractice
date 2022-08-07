@@ -34,6 +34,8 @@ namespace practice
                 Hide();
                 form1.Show();
             }
+            else
+                MessageBox.Show("try again");
         }
 
         private void button2_Click(object sender, EventArgs e)
