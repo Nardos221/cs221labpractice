@@ -19,6 +19,10 @@ namespace practice
         public Form1()
         {
             InitializeComponent();
+            checkedListBox1.Items.Add("Is Regular",CheckState.Checked);
+            checkedListBox1.Items.Add("Is Unique",CheckState.Unchecked);
+            checkedListBox1.Items.Add("Is Null",CheckState.Indeterminate);
+
         }
 
         private void addbtn_Click(object sender, EventArgs e)
@@ -30,6 +34,12 @@ namespace practice
             md.objectname = txt_objectname.Text;
             md.count = txt_count.Text;
             md.price = txt_price.Text;
+            checkedListBox1.CheckedItems.Contains(md);
+            string message = " ";
+            foreach (var item in checkedListBox1.CheckedItems)
+            {
+                message +=item.ToString();
+            }
 
             Regex regex = new Regex("@^(a-z)(z)$");
             if(regex.IsMatch(txt_objectname.Text))
@@ -41,7 +51,6 @@ namespace practice
             {
                 MessageBox.Show("item added");
                 errorProvider1.SetError(txt_objectname, "add object name");
-                MessageBox.Show("add name");
 
             }
             md.save();
@@ -55,5 +64,40 @@ namespace practice
         {
             this.Close();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index =checkedListBox1.SelectedIndex;
+            int count=checkedListBox1.Items.Count;
+            for(int x =0; x < count; x++)
+            {
+                if(index !=x)
+                {
+                   // checkedListBox1.SetItemChecked(x, false);
+                   checkedListBox1.SetItemCheckState(x,CheckState.Checked);
+                }
+            }
+        }
+
+        private void groupBox1_Enter_1(object sender, EventArgs e)
+        {
+            string choice = " ";
+            if(raddioButton1.Checked)
+            {
+                choice = raddioButton1.Text;
+                
+            }
+            if(radiobutton2.Checked)
+            {
+                choice=radiobutton2.Text;
+                
+            }
+            MessageBox.Show(choice);
+                   }
     }
 }

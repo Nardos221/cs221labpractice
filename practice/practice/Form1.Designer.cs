@@ -45,8 +45,13 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.newgridproduct = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.raddioButton1 = new System.Windows.Forms.RadioButton();
+            this.radiobutton2 = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             ((System.ComponentModel.ISupportInitialize)(this.newgridproduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // number
@@ -88,7 +93,7 @@
             // count
             // 
             this.count.AutoSize = true;
-            this.count.Location = new System.Drawing.Point(28, 200);
+            this.count.Location = new System.Drawing.Point(28, 183);
             this.count.Name = "count";
             this.count.Size = new System.Drawing.Size(34, 13);
             this.count.TabIndex = 4;
@@ -97,7 +102,7 @@
             // price
             // 
             this.price.AutoSize = true;
-            this.price.Location = new System.Drawing.Point(198, 200);
+            this.price.Location = new System.Drawing.Point(198, 183);
             this.price.Name = "price";
             this.price.Size = new System.Drawing.Size(30, 13);
             this.price.TabIndex = 5;
@@ -105,7 +110,7 @@
             // 
             // addbtn
             // 
-            this.addbtn.Location = new System.Drawing.Point(12, 275);
+            this.addbtn.Location = new System.Drawing.Point(12, 256);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(75, 23);
             this.addbtn.TabIndex = 6;
@@ -115,7 +120,7 @@
             // 
             // cancelbtn
             // 
-            this.cancelbtn.Location = new System.Drawing.Point(201, 275);
+            this.cancelbtn.Location = new System.Drawing.Point(201, 256);
             this.cancelbtn.Name = "cancelbtn";
             this.cancelbtn.Size = new System.Drawing.Size(75, 23);
             this.cancelbtn.TabIndex = 7;
@@ -146,14 +151,14 @@
             // 
             // txt_count
             // 
-            this.txt_count.Location = new System.Drawing.Point(12, 230);
+            this.txt_count.Location = new System.Drawing.Point(12, 212);
             this.txt_count.Name = "txt_count";
             this.txt_count.Size = new System.Drawing.Size(100, 20);
             this.txt_count.TabIndex = 11;
             // 
             // txt_price
             // 
-            this.txt_price.Location = new System.Drawing.Point(188, 230);
+            this.txt_price.Location = new System.Drawing.Point(176, 212);
             this.txt_price.Name = "txt_price";
             this.txt_price.Size = new System.Drawing.Size(100, 20);
             this.txt_price.TabIndex = 12;
@@ -168,20 +173,65 @@
             // newgridproduct
             // 
             this.newgridproduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.newgridproduct.Location = new System.Drawing.Point(331, 200);
+            this.newgridproduct.Location = new System.Drawing.Point(12, 320);
             this.newgridproduct.Name = "newgridproduct";
-            this.newgridproduct.Size = new System.Drawing.Size(457, 150);
+            this.newgridproduct.Size = new System.Drawing.Size(457, 58);
             this.newgridproduct.TabIndex = 14;
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // raddioButton1
+            // 
+            this.raddioButton1.AutoSize = true;
+            this.raddioButton1.Location = new System.Drawing.Point(32, 28);
+            this.raddioButton1.Name = "raddioButton1";
+            this.raddioButton1.Size = new System.Drawing.Size(60, 17);
+            this.raddioButton1.TabIndex = 15;
+            this.raddioButton1.TabStop = true;
+            this.raddioButton1.Text = "Sample";
+            this.raddioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radiobutton2
+            // 
+            this.radiobutton2.AutoSize = true;
+            this.radiobutton2.Location = new System.Drawing.Point(32, 51);
+            this.radiobutton2.Name = "radiobutton2";
+            this.radiobutton2.Size = new System.Drawing.Size(62, 17);
+            this.radiobutton2.TabIndex = 16;
+            this.radiobutton2.TabStop = true;
+            this.radiobutton2.Text = "variable";
+            this.radiobutton2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.raddioButton1);
+            this.groupBox1.Controls.Add(this.radiobutton2);
+            this.groupBox1.Location = new System.Drawing.Point(573, 212);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 83);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter_1);
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(381, 227);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(120, 64);
+            this.checkedListBox1.TabIndex = 18;
+            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.newgridproduct);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txt_price);
@@ -201,6 +251,8 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.newgridproduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,6 +276,10 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView newgridproduct;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.RadioButton radiobutton2;
+        private System.Windows.Forms.RadioButton raddioButton1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
 }
 
