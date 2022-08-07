@@ -12,9 +12,10 @@ namespace practice
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        public Form2( )
         {
             InitializeComponent();
+           
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -33,6 +34,11 @@ namespace practice
                 Hide();
                 form1.Show();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
