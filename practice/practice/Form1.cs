@@ -30,6 +30,7 @@ namespace practice
             md.objectname = txt_objectname.Text;
             md.count = txt_count.Text;
             md.price = txt_price.Text;
+
             Regex regex = new Regex("@^(a-z)(z)$");
             if(regex.IsMatch(txt_objectname.Text))
             {
@@ -39,6 +40,8 @@ namespace practice
                 if(string.IsNullOrEmpty(txt_objectname.Text))
             {
                 MessageBox.Show("item added");
+                errorProvider1.SetError(txt_objectname, "add object name");
+                MessageBox.Show("add name");
 
             }
             md.save();

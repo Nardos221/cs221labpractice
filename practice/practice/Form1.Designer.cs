@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.number = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.inventorynum = new System.Windows.Forms.Label();
@@ -43,7 +44,9 @@
             this.txt_price = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.newgridproduct = new System.Windows.Forms.DataGridView();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.newgridproduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // number
@@ -170,6 +173,10 @@
             this.newgridproduct.Size = new System.Drawing.Size(457, 150);
             this.newgridproduct.TabIndex = 14;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -193,6 +200,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.newgridproduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,6 +223,7 @@
         private System.Windows.Forms.TextBox txt_price;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView newgridproduct;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 
