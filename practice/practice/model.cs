@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 namespace practice
 {
     internal class model
-    {
-         public string number { set; get; }
+    { 
+         public  static List <model>modeList=new List<model> ();
+        public string number { get; set;}
         public string date { set; get; }
          public  string inventorynum { set; get; }
          public  string objectname { set; get; }
@@ -17,7 +18,12 @@ namespace practice
          public void save()
         {
             Console.WriteLine("added successfully");
-        }
+            modeList.Add(this);
 
+        }
+        public List<model> getall()
+        {
+            return modeList;
+        }
     }
 }

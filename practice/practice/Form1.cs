@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.Layout;
+using System.Text.RegularExpressions;
+
 
 namespace practice
 {
@@ -28,8 +30,21 @@ namespace practice
             md.objectname = txt_objectname.Text;
             md.count = txt_count.Text;
             md.price = txt_price.Text;
+            Regex regex = new Regex("@^(a-z)(z)$");
+            if(regex.IsMatch(txt_objectname.Text))
+            {
+                MessageBox.Show("try");
+            }
+            else
+                if(string.IsNullOrEmpty(txt_objectname.Text))
+            {
+                MessageBox.Show("item added");
+
+            }
             md.save();
             MessageBox.Show("item added");
+            newgridproduct.DataSource = null;
+            newgridproduct.DataSource = md.getall();
 
         }
 

@@ -42,6 +42,8 @@
             this.txt_count = new System.Windows.Forms.TextBox();
             this.txt_price = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.newgridproduct = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.newgridproduct)).BeginInit();
             this.SuspendLayout();
             // 
             // number
@@ -160,11 +162,20 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 13;
             // 
+            // newgridproduct
+            // 
+            this.newgridproduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.newgridproduct.Location = new System.Drawing.Point(331, 200);
+            this.newgridproduct.Name = "newgridproduct";
+            this.newgridproduct.Size = new System.Drawing.Size(457, 150);
+            this.newgridproduct.TabIndex = 14;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.newgridproduct);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txt_price);
             this.Controls.Add(this.txt_count);
@@ -181,6 +192,7 @@
             this.Controls.Add(this.number);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.newgridproduct)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,6 +214,7 @@
         private System.Windows.Forms.TextBox txt_count;
         private System.Windows.Forms.TextBox txt_price;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DataGridView newgridproduct;
     }
 }
 
