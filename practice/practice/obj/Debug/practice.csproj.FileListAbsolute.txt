@@ -9,3 +9,4 @@ C:\Users\Nardos.A\Documents\GitHub\cs221labpractice\practice\practice\obj\Debug\
 C:\Users\Nardos.A\Documents\GitHub\cs221labpractice\practice\practice\obj\Debug\practice.csproj.CoreCompileInputs.cache
 C:\Users\Nardos.A\Documents\GitHub\cs221labpractice\practice\practice\obj\Debug\practice.exe
 C:\Users\Nardos.A\Documents\GitHub\cs221labpractice\practice\practice\obj\Debug\practice.pdb
+C:\Users\Nardos.A\Documents\GitHub\cs221labpractice\practice\practice\obj\Debug\practice.Form2.resources
