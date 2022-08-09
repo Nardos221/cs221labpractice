@@ -49,7 +49,6 @@
             this.radiobutton2 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.tbsearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.newgridproduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -226,23 +225,12 @@
             this.checkedListBox1.TabIndex = 18;
             this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
-            // tbsearch
-            // 
-            this.tbsearch.Location = new System.Drawing.Point(537, 140);
-            this.tbsearch.Name = "tbsearch";
-            this.tbsearch.Size = new System.Drawing.Size(75, 23);
-            this.tbsearch.TabIndex = 19;
-            this.tbsearch.Text = "search";
-            this.tbsearch.UseVisualStyleBackColor = true;
-            this.tbsearch.Click += new System.EventHandler(this.btn_search_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tbsearch);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.newgridproduct);
@@ -293,7 +281,6 @@
         private System.Windows.Forms.RadioButton raddioButton1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.Button tbsearch;
     }
 }
 

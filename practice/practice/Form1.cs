@@ -62,7 +62,7 @@ namespace practice
 
         private void cancelbtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            System.Environment.Exit(0);
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -107,7 +107,7 @@ namespace practice
 
         private void btn_search_Click(object sender, EventArgs e)
         {
-            var pro = model.findOne(tbsearch.Text);
+           /* var pro = model.findOne(tbsearch.Text);
             if(pro== null)
             {
                 MessageBox.Show("not found");
@@ -117,6 +117,7 @@ namespace practice
                 model.findOne(pro.objectname);
                 MessageBox.Show("found");
             }
+           */
         }
     }
     }

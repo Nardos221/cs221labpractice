@@ -51,9 +51,14 @@ namespace practice
             {
                 activescreen.Close();
             }
-           // search s = new search();
-           // s.MdiParent = this;
-            //s.show();
+            search s = new search();
+            s.MdiParent = this;
+            s.Show();
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
