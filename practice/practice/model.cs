@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace practice
 {
@@ -24,6 +25,11 @@ namespace practice
         public List<model> getall()
         {
             return modeList;
+        }
+
+        public static model findOne(string name)
+        {
+            return modeList.Find(modeList => modeList.objectname == name);
         }
     }
 }

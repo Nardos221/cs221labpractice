@@ -99,5 +99,25 @@ namespace practice
             }
             MessageBox.Show(choice);
                    }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            var pro = model.findOne(tbsearch.Text);
+            if(pro== null)
+            {
+                MessageBox.Show("not found");
+            }
+            else
+            {
+                model.findOne(pro.objectname);
+                MessageBox.Show("found");
+            }
+        }
     }
-}
+    }
+

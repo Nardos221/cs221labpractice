@@ -10,3 +10,5 @@ C:\Users\Nardos.A\Documents\GitHub\cs221labpractice\practice\practice\obj\Debug\
 C:\Users\Nardos.A\Documents\GitHub\cs221labpractice\practice\practice\obj\Debug\practice.exe
 C:\Users\Nardos.A\Documents\GitHub\cs221labpractice\practice\practice\obj\Debug\practice.pdb
 C:\Users\Nardos.A\Documents\GitHub\cs221labpractice\practice\practice\obj\Debug\practice.Form2.resources
+C:\Users\Nardos.A\Documents\GitHub\cs221labpractice\practice\practice\obj\Debug\practice.Form3.resources
+C:\Users\Nardos.A\Documents\GitHub\cs221labpractice\practice\practice\obj\Debug\practice.object.resources
