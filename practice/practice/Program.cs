@@ -16,7 +16,7 @@ namespace practice
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new search());
+            Application.Run(new Form1());
         }
     }
 }

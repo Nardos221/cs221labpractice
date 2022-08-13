@@ -27,7 +27,7 @@ namespace practice
             else
             {
                 model.findOne(pro.objectname);
-                MessageBox.Show("not found");
+                MessageBox.Show("found");
 
             }
         }

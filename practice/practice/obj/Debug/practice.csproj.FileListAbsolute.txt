@@ -13,3 +13,4 @@ C:\Users\Nardos.A\Documents\GitHub\cs221labpractice\practice\practice\obj\Debug\
 C:\Users\Nardos.A\Documents\GitHub\cs221labpractice\practice\practice\obj\Debug\practice.Form3.resources
 C:\Users\Nardos.A\Documents\GitHub\cs221labpractice\practice\practice\obj\Debug\practice.object.resources
 C:\Users\Nardos.A\Documents\GitHub\cs221labpractice\practice\practice\obj\Debug\practice.search.resources
+C:\Users\Nardos.A\Documents\GitHub\cs221labpractice\practice\practice\obj\Debug\practice.UserControl1.resources
